@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e8ff; /* light purple */
+            color: #333;
+        }
+
+        header {
+            background-color: #6b21a8; /* dark purple */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #5b21b6;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #6b21a8;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a {
+            color: #6b21a8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>bimakka b pujari</h1>
+        <p>Student | Aspiring Developer</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a motivated student interested in web development and technology.
+            I enjoy learning new skills and building simple projects to improve my knowledge.
+        </p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor’s Degree – shree rayeshwar institute of engineering and information</li>
+            <li>Higher Secondary – Kendriya Vidyalaya NO 1 Vasco Da Gama </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Basic Programming Knowledge</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Projects / Workshop Learning</h2>
+        <ul>
+            <li>Personal Portfolio Website</li>
+            <li>Web Development Workshop</li>
+            <li>HTML &amp; CSS Mini Projects</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:bimakka1528@gmail.com">bimakka1528@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Your Name</p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
